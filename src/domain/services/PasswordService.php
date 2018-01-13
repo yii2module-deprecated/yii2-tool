@@ -7,14 +7,15 @@ use yii2lab\helpers\Helper;
 
 class PasswordService extends BaseService {
 	
-	private $length = 9;
-	private $set = null;
-	private $count = 105;
+	public $length = 9;
+	public $set = null;
+	public $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	public $count = 105;
 	
 	public function generate() {
 		$passList = [];
 		for($i=0;$i<$this->count;$i++) {
-			$passList[] = Helper::generateRandomString($this->length, $this->set, null, true);
+			$passList[] = Helper::generateRandomString($this->length, $this->set, $this->characters, true);
 		}
 		return $passList;
 	}
