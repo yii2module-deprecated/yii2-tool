@@ -1,5 +1,5 @@
 <?php
-namespace yii2module\tool\tests\unit;
+namespace tests\unit;
 
 use Codeception\Test\Unit;
 
