@@ -13,9 +13,11 @@ class Domain extends \yii2lab\domain\Domain {
 		return [
 			'repositories' => [
 				'password',
+				'grabber',
 			],
 			'services' => [
 				'password',
+				'grabber',
 			],
 		];
 	}
