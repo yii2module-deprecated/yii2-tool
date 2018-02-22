@@ -3,7 +3,7 @@
 namespace yii2module\tool\domain\services;
 
 use yii2lab\domain\services\BaseService;
-use yii2lab\helpers\Helper;
+use yii2lab\helpers\StringHelper;
 
 class PasswordService extends BaseService {
 	
@@ -15,7 +15,7 @@ class PasswordService extends BaseService {
 	public function generate() {
 		$passList = [];
 		for($i=0;$i<$this->count;$i++) {
-			$passList[] = Helper::generateRandomString($this->length, $this->set, $this->characters, true);
+			$passList[] = StringHelper::generateRandomString($this->length, $this->set, $this->characters, true);
 		}
 		return $passList;
 	}
