@@ -4,12 +4,13 @@ namespace yii2module\tool\domain\services;
 
 use yii2lab\domain\services\BaseService;
 use yii2lab\helpers\StringHelper;
+use yii2module\tool\domain\enums\CharsetEnum;
 
 class PasswordService extends BaseService {
 	
 	public $length = 9;
 	public $set = null;
-	public $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	public $characters = CharsetEnum::NUM_ALPHA;
 	public $count = 105;
 	
 	public function generate() {
