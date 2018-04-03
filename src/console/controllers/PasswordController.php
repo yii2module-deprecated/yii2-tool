@@ -17,7 +17,7 @@ class PasswordController extends Controller
 	 */
 	public function actionGenerate()
 	{
-		$passwordList = Yii::$app->tool->password->generate();
+		$passwordList = Yii::$domain->tool->password->generate();
 		$text = implode(SPC, $passwordList);
 		Output::line();
 		Output::pipe('Generated passwords');
