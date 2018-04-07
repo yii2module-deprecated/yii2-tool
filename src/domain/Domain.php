@@ -33,6 +33,7 @@ class Domain extends \yii2lab\domain\Domain {
 						'static',
 						'tool',
 						'tpl',
+						'tpltest',
 						'yii',
 						'yiitest',
 					],
