@@ -3,7 +3,7 @@
 namespace yii2module\tool\console\controllers;
 
 use Yii;
-use yii2lab\console\yii\console\Controller;
+use yii2lab\console\base\Controller;
 use yii2lab\console\helpers\Output;
 
 /**
