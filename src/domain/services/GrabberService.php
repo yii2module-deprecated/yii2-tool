@@ -3,6 +3,7 @@
 namespace yii2module\tool\domain\services;
 
 use yii\httpclient\Client;
+use yii2lab\app\domain\helpers\EnvService;
 use yii2lab\console\helpers\Output;
 use yii2lab\domain\services\BaseService;
 use yii2lab\helpers\yii\FileHelper;
@@ -55,7 +56,7 @@ class GrabberService extends BaseService {
 	private function getContent($url) {
 		$url = trim($url, SL);
 		$httpClient = new Client();
-		$httpClient->baseUrl = env('url.frontend');
+		$httpClient->baseUrl = EnvService::getUrl(FRONTEND);
 		$httpClient->baseUrl = trim($httpClient->baseUrl, SL);
 		$request = $httpClient->createRequest();
 		$request
