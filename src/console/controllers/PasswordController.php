@@ -3,8 +3,8 @@
 namespace yii2module\tool\console\controllers;
 
 use Yii;
-use yii2lab\console\base\Controller;
-use yii2lab\console\helpers\Output;
+use yii2lab\extension\console\base\Controller;
+use yii2lab\extension\console\helpers\Output;
 
 /**
  * Password tools
