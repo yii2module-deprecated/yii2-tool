@@ -3,7 +3,7 @@
 namespace yii2module\tool\domain\helpers;
 
 use yii\helpers\ArrayHelper;
-use yii2lab\helpers\yii\FileHelper;
+use yii2lab\extension\yii\helpers\FileHelper;
 use yii2module\tool\domain\entities\OpenServerEntity;
 
 class OpenServerHelper {
