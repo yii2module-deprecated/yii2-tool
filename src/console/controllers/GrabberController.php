@@ -16,7 +16,7 @@ class GrabberController extends Controller
 	 */
 	public function actionRun()
 	{
-		Yii::$domain->tool->grabber->run();
+		\App::$domain->tool->grabber->run();
 	}
 	
 }

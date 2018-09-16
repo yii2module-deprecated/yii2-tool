@@ -18,7 +18,7 @@ class OpenServerController extends Controller
 	 */
 	public function actionUpdate()
 	{
-		$collection = Yii::$domain->tool->openServer->update();
+		$collection = \App::$domain->tool->openServer->update();
 		$hosts = ArrayHelper::getColumn($collection, 'host');
 		Output::items($hosts, count($collection) . ' hosts');
 		Output::line();
@@ -26,7 +26,7 @@ class OpenServerController extends Controller
 	
 	public function actionAll()
 	{
-		$collection = Yii::$domain->tool->openServer->all();
+		$collection = \App::$domain->tool->openServer->all();
 		$hosts = ArrayHelper::getColumn($collection, 'host');
 		Output::items($hosts, count($collection) . ' hosts');
 		Output::line();
