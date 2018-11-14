@@ -3,7 +3,7 @@
 namespace yii2module\tool\domain\services;
 
 use yii2lab\domain\services\BaseService;
-use yii2lab\helpers\StringHelper;
+use yii2lab\extension\common\helpers\StringHelper;
 use yii2module\tool\domain\enums\CharsetEnum;
 
 class PasswordService extends BaseService {
